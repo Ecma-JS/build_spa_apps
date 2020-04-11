@@ -1,1 +1,0 @@
-BOTTOM=host # `host` if docker from host PC or `machine` if used docker-machine tool

@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 echo Building docker-myapp:build
 
-docker build -t docker-myapp:build . -f Dockerfile.build
+bash ember init
+
+# docker build -t docker-myapp:build . -f Dockerfile.build
 
 docker container create --name extract docker-myapp:build
 

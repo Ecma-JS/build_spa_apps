@@ -4,7 +4,7 @@ BOTTOM=$(grep BOTTOM .env | cut -d '=' -f2 | cut -d '#' -f1)
 echo
 
 if [ $BOTTOM = "host" ]; then
-  export APP_PATH=$PWD
+  export APP_PATH=${PWD}
 elif [ $BOTTOM = "machine" ]; then
   export APP_PATH=${PWD/home/hosthome}
 fi
