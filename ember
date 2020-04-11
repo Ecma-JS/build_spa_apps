@@ -15,7 +15,7 @@ docker run --rm -it \
   -v ${APP_PATH}/tmp:/tmp \
   -v ${APP_PATH}/.bash_history:/root/.bash_history \
   danlynn/ember-cli:3.13.0-node_12.10 \
-  ember $@
+  ember $@build 
 
 echo
 echo
