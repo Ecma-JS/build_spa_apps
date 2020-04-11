@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 echo Building docker-myapp:build
 
-bash ./bash
-
-bash ./ember 
+bash ./ember build
 
 echo Building docker-myapp:latest
 
