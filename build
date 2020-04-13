@@ -3,6 +3,8 @@ echo Building docker-myapp:build
 
 bash ./ember build
 
+sudo chown -R "$USER":"$USER" ./dist
+
 echo Building docker-myapp:latest
 
 docker build --no-cache -t docker-myapp:latest .
