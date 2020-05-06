@@ -10,10 +10,10 @@ elif [ $BOTTOM = "machine" ]; then
 fi
 
 docker run --rm -it \
-  -e APP_PATH=${APP_PATH} \
-  -v ${APP_PATH}:/myapp \
-  -v ${APP_PATH}/tmp:/tmp \
-  -v ${APP_PATH}/.bash_history:/root/.bash_history \
+  -e APP_PATH="${APP_PATH}" \
+  -v "${APP_PATH}:/myapp" \
+  -v "${APP_PATH}/tmp:/tmp" \
+  -v "${APP_PATH}/.bash_history:/root/.bash_history" \
   danlynn/ember-cli:3.13.0-node_12.10 \
   bash $@
 
